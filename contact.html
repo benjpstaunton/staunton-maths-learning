@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Staunton Tutoring</title>
+    <meta name="description" content="Get in touch to book a free consultation for 11+, GCSE, or A‑Level tutoring."/>
+    <link rel="icon" href="/assets/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="canonical" href="https://example.com/contact.html" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact — Staunton Tutoring">
+    <meta property="og:description" content="Get in touch to book a free consultation for 11+, GCSE, or A‑Level tutoring.">
+    <meta property="og:image" content="/assets/og-default.jpg">
+    <meta property="og:url" content="https://example.com/contact.html">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact — Staunton Tutoring">
+    <meta name="twitter:description" content="Get in touch to book a free consultation for 11+, GCSE, or A‑Level tutoring.">
+    <meta name="twitter:image" content="/assets/og-default.jpg">
+  </head>
+  <body>
+
+    <header class="site-header">
+      <a class="brand" href="/">
+        <img src="/assets/logo.png" alt="Staunton Tutoring logo" width="32" height="32">
+        <span>Staunton Tutoring</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul role="list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services.html">Tutoring Services</a></li>
+          <li class="has-dropdown">
+            <button class="menu-button" id="about-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="about-menu">
+              About
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="chev"><path d="M7 10l5 5 5-5"/></svg>
+            </button>
+            <ul id="about-menu" class="dropdown" role="menu" aria-label="About submenu">
+              <li role="none"><a role="menuitem" href="/about-bio.html">Bio</a></li>
+              <li role="none"><a role="menuitem" href="/about-approach.html">Approach</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" class="page">
+      <header class="page-header">
+        <h1 class="reveal" data-reveal>Contact</h1>
+        <p class="lead reveal" data-reveal>Have a question or want to book a free consultation? Send a message below.</p>
+      </header>
+
+      <section class="contact-section">
+        <div class="form-wrap reveal" data-reveal>
+          <div class="notice" role="status" aria-live="polite" id="form-status" hidden></div>
+          <form id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name<span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+              <p class="error" id="name-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email<span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required inputmode="email" aria-describedby="email-error">
+              <p class="error" id="email-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="phone-error" placeholder="+44…">
+              <p class="error" id="phone-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="year">Child’s year group<span aria-hidden="true">*</span></label>
+              <select id="year" name="year" required aria-describedby="year-error">
+                <option value="">Please choose…</option>
+                <option>Year 5</option>
+                <option>Year 6</option>
+                <option>Year 7</option>
+                <option>Year 8</option>
+                <option>Year 9</option>
+                <option>Year 10</option>
+                <option>Year 11</option>
+                <option>Year 12</option>
+                <option>Year 13</option>
+              </select>
+              <p class="error" id="year-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Message<span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="6" required aria-describedby="message-error"></textarea>
+              <p class="error" id="message-error" role="alert" hidden></p>
+            </div>
+
+            <div class="actions">
+              <button type="submit" class="btn btn-primary">Send message</button>
+              <a class="btn btn-secondary" href="mailto:ben.jp.staunton@iclould.com?subject=Tutoring%20Enquiry">Use email instead</a>
+            </div>
+          </form>
+          <p class="hint">Prefer email? Click “Use email instead” or write to <a href="mailto:ben.jp.staunton@iclould.com">ben.jp.staunton@iclould.com</a>.</p>
+        </div>
+      </section>
+
+      <section class="alt-submit reveal" data-reveal>
+        <h2>Planning to use Netlify Forms?</h2>
+        <p>Add <code>name="contact"</code> and <code>data-netlify="true"</code> to the form, plus a hidden honeypot field.
+        See README for instructions.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p><strong>Contact:</strong> <a href="mailto:ben.jp.staunton@iclould.com">ben.jp.staunton@iclould.com</a> &middot;
+           <a href="https://www.linkedin.com/in/ben-staunton/" target="_blank" rel="noopener">LinkedIn</a></p>
+        <small>&copy; <span id="year"></span> Staunton Tutoring. All rights reserved.
+        <span class="dot">&middot;</span> <a href="#" aria-disabled="true">Privacy</a>
+        <span class="dot">&middot;</span> <a href="#" aria-disabled="true">Terms</a></small>
+      </div>
+    </footer>
+    <script type="module" src="/js/app.js" defer></script>
+
+  </body>
+</html>
